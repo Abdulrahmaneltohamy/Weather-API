@@ -1,0 +1,52 @@
+body {
+    background-image: url(../image/3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.find-btn , .subscribe-btn
+{
+
+    transform: translateY(-50%);
+    top: 50%;
+    right:4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.tempC {
+    font-size: 90px;
+}
+.today-card{
+    height: 370px;
+}
+.afterTm-card , .tomm-card
+{
+    height: 240px;
+}
+.card-today{
+    background-color: #323544;
+    color: white;
+}
+footer
+{
+    background-color: #262936;
+    color: white;
+}
+.social-link a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+  }
+  .social-link a:hover {
+    background: #009ad8;
+    color: white;
+  }

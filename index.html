@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Api</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="hero container py-5">
+        <div class="search w-75 m-auto position-relative">
+          <input id="searchBtn" class="form-control rounded-pill py-3" type="text"
+            placeholder="find your location .....">
+          <button class="find-btn btn btn-primary rounded-pill position-absolute ">find</button>
+        </div>
+        <div class="d-flex py-4">
+          <div id="countryInput" class=" fs-4 rounded-4 bg-light-subtle py-4 w-25 m-auto text-center fw-bold"></div>
+          <div id="dateTodayInput" class=" fs-4  rounded-4 bg-light-subtle py-4 w-25 m-auto text-center fw-bold"></div>
+        </div>
+      </div>
+
+      <div class="forecast container py-5">
+        <div class="row align-items-center g-3">
+
+          <!-- day today -->
+          <div class="col-md-4">
+            <div class="forecast-card card-today today-card card p-4">
+              <div class="forecast-header d-flex justify-content-between">
+                <h5 class="dayToday"></h5>
+                <h5 class="dateToday"></h5>
+              </div>
+              <div class="citylocation"></div>
+              <div class="tempC d-flex justify-content-center"></div>
+              <div id="weatherCondition" class="custom d-flex justify-content-center"></div>
+              <div class="d-flex justify-content-center mt-1">
+                <img id="forecastIcon" src="" alt="">
+              </div>
+
+              <div class="d-flex justify-content-between">
+                <div class="text-center">
+                  <p id="tempMaxText" class=" fw-bold m-1"></p>
+                  <p id="tempMax"></p>
+                </div>
+                <div class="text-center">
+                  <p id="tempAvgText" class="fw-bold m-1"></p>
+                  <p id="tempAvg"></p>
+                </div>
+                <div class="text-center m-0 p-0">
+                  <p id="tempMinText" class="fw-bold m-1"></p>
+                  <p id="tempMin"></p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- day Tommorrow -->
+          <div class="col-md-4">
+            <div class="forecast-card card tomm-card text-center p-4">
+              <div class="forecast-header mb-2">
+                <h5 id="dayTomm"></h5>
+              </div>
+              <div class="forecast-icon mb-2">
+                <img id="forecastIconTomm" src="" alt="">
+              </div>
+              <div id="maxTommorro" class="fw-semibold"></div>
+              <small id="minTommorrow" class="mb-2 fw-semibold"></small>
+              <div id="condTommorrow" class="fw-semibold"></div>
+            </div>
+          </div>
+
+          <!-- day after tommorrow -->
+          <div class="col-md-4">
+            <div class="forecast-card bg-secondary card afterTm-card text-center p-4">
+              <div class="forecast-header mb-2">
+                <h5 id="dayAfter"></h5>
+              </div>
+              <div class="forecast-icon mb-2">
+                <img id="forecastIconAfter" src="" alt="">
+              </div>
+              <div id="maxAfterTommorro" class="fw-semibold"></div>
+              <small id="minAfterTommorrow" class="mb-2 fw-semibold"></small>
+              <div id="condAfterTommorrow" class="fw-semibold"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container py-4">
+      <div class="row g-4 d-flex align-items-center justify-content-center">
+        <div class="col-md-7">
+          <div class="subscribe position-relative">
+            <input type="text" class="form-control rounded-pill py-3" placeholder="Enter your email to subscribe...">
+            <button class="subscribe-btn btn btn-primary rounded-pill position-absolute ">Subscribe</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="social-link text-center">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-3">
+        <div class="row">
+          <div class="col-11 m-auto">
+            <p>
+              Copyright 2014 Company name. Designed by Themezy. All rights reserved
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
